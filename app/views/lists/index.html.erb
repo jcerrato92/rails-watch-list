@@ -1,8 +1,7 @@
 <h1>Lists<h1>
 <% @lists.each do |list| %>
   <ul>
-    <li><%= @lists.id %></li>
-    <li><%= @lists.name %></li>
+    <li><%= list.name %></li>
   </ul>
 <% end %>
 <button><%= link_to 'Add List', new_list_path((@list)) %></button>

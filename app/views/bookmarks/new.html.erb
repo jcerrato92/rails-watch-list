@@ -1,0 +1,6 @@
+<h1>New Bookmark</h1>
+<%= simple_form_for [@list, @bookmark, @movies] do |f| %>
+<%= f.input :category, label: 'Choose a movie:', :collection => @movies %>
+<%= f.input :content, label: 'Write your comment:' %>
+<%= f.button :submit, "Create Bookmark" %>
+<% end %>
