@@ -1,5 +1,8 @@
+<div class="container">
 <h1>New List Element</h1>
 <%= simple_form_for [@list] do |f| %>
   <%= f.input :name, label: 'Write your list name' %>
+  <%= f.input :photo %>
   <%= f.button :submit, "Create List" %>
 <% end %>
+</div>
